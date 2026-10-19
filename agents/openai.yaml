@@ -1,0 +1,4 @@
+interface:
+  display_name: "混元生图"
+  short_description: "Tencent Hunyuan images with local credential setup"
+  default_prompt: "使用 $hunyuan-image 生成图片；如果还未配置凭证，先引导我在本机完成配置。"

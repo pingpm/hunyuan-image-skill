@@ -1,0 +1,29 @@
+{
+  "name": "hunyuan-image-agent-skill",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portable Tencent CloudBase Hunyuan image generation skill with local credential onboarding",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pingpm/hunyuan-image-skill.git"
+  },
+  "homepage": "https://github.com/pingpm/hunyuan-image-skill#readme",
+  "bugs": {
+    "url": "https://github.com/pingpm/hunyuan-image-skill/issues"
+  },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "configure": "node scripts/hunyuan-image.mjs configure",
+    "status": "node scripts/hunyuan-image.mjs status",
+    "generate": "node scripts/hunyuan-image.mjs generate"
+  },
+  "dependencies": {
+    "@cloudbase/js-sdk": "3.6.3",
+    "@cloudbase/signature-nodejs": "2.0.0",
+    "jsonwebtoken": "9.0.3",
+    "ws": "8.21.0"
+  }
+}
